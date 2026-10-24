@@ -21,7 +21,16 @@ function sumarPrecios (precios: number []): number {
 console.log(sumarPrecios(precios));
 
 //3.
+function presentar (nombre: string, apellido?: string): string {
+    if (apellido) {
+        return `Hola, ${nombre} ${apellido}`;
+    } else {
+        return `Hola, ${nombre}`;
+    }
+}
 
+console.log(presentar("Ana", "Pérez"));
+console.log(presentar("Ana"));
 
 
 
