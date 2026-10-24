@@ -44,7 +44,9 @@ console.log(calcularDescuento(50, 10));
 
 
 //5.
+function mostrarId(id: string | number){
 
+}
 
 
 
