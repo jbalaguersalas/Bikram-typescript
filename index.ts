@@ -33,12 +33,14 @@ console.log(presentar("Ana", "Pérez"));
 console.log(presentar("Ana"));
 
 
-
-
 //4.
+function calcularDescuento(precio: number, porcentaje: number): number{
+    
+    return precio - (precio * porcentaje /100);
+}
 
-
-
+console.log(calcularDescuento(100, 20));
+console.log(calcularDescuento(50, 10));
 
 
 //5.
