@@ -103,7 +103,7 @@ const Miguel: Persona = {
   edad: 24,
   ciudad: "Valencia",
 };
-const maria: Persona = {
+const Maria: Persona = {
   nombre: "Maria",
   edad: 42,
 };
@@ -115,7 +115,8 @@ function mostrarPersona(persona: Persona):void {
     console.log(`${persona.nombre} y tiene ${persona.edad}`)
   }
 }
-
+mostrarPersona(Miguel);
+mostrarPersona(Maria);
 
 //10.
 
