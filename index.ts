@@ -168,7 +168,21 @@ if (usuario){
 
 //12.
 
+let dato: unknown = "Hola Mundo";
 
+if (typeof dato === "string") {
+  console.log(dato.toUpperCase());
+}else {
+  console.log("no es un texto");
+}
+
+dato = 42;
+
+if (typeof dato === "string"){
+  console.log(dato.toUpperCase());
+}else {
+  console.log("no es un texto");
+}
 
 
 
