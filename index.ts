@@ -176,7 +176,7 @@ if (typeof dato === "string") {
   console.log("no es un texto");
 }
 
-dato = 42;
+dato = 498;
 
 if (typeof dato === "string"){
   console.log(dato.toUpperCase());
@@ -188,7 +188,12 @@ if (typeof dato === "string"){
 
 //13.
 
-
+type Usuario = {
+id: number;
+nombre: string;
+email: string;
+edad: number;
+}
 
 
 
