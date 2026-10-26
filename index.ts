@@ -104,9 +104,17 @@ const Miguel: Persona = {
   ciudad: "Valencia",
 };
 const maria: Persona = {
-  
-}
+  nombre: "Maria",
+  edad: 42,
+};
 
+function mostrarPersona(persona: Persona):void {
+  if (persona.ciudad){
+    console.log(`${persona.nombre} tiene ${persona.edad}y vive en ${persona.ciudad}`)
+  }else{
+    console.log(`${persona.nombre} y tiene ${persona.edad}`)
+  }
+}
 
 
 //10.
