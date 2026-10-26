@@ -205,11 +205,16 @@ const resumen: Pick<Usuario, "id" | "nombre"> = {
 };
 console.log(resumen);
 
-
 //14.
 
+type UsuarioPublico = Omit<Usuario, "email">;
 
-
+const usuarioPublico: UsuarioPublico = {
+  id: 453,
+  nombre: "Manuel",
+  edad: 23,
+};
+console.log(usuarioPublico)
 
 
 //15.
