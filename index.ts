@@ -52,15 +52,22 @@ mostrarId("blanco-33");
 mostrarId(33);
 
 
-
-
-
 //6.
 
-
-
-
-
+type Producto = {
+  nombre: string;
+  precio: number;
+  descripcion?: string;
+}
+const agua: Producto = {
+  nombre: "Agua",
+  precio: 1.00,
+  descripcion: "Hidrata",
+}
+const ordenador: Producto = {
+  nombre: "Hp",
+  precio: 455,
+}
 //7.
 
 
