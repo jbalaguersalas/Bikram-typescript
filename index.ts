@@ -119,11 +119,29 @@ mostrarPersona(Miguel);
 mostrarPersona(Maria);
 
 //10.
+interface Libro {
+  titulo: string;
+  autor: string;
+  paginas: number;
+  disponible: boolean;
+}
 
+const libros: Libro [] = [
+  {titulo: "Rebeldes", autor: "Miguel-Pardo", paginas: 678, disponible: true},
+  {titulo: "Maca", autor: "Pablo-Carceles", paginas: 899, disponible: true},
+  {titulo: "Mil", autor: "Celdas-Paredes", paginas: 6767, disponible: false},
+];
 
+function estadisponible(libro: Libro): boolean {
+  return libro.disponible;
 
-
-
+}
+console.log("Libros disponibles:");
+for (let i = 0; i< libros.length; i++){
+  if (estadisponible(libros[i])){
+    console.log(`${libros[i].titulo} de ${libros[i].autor}`);
+  }
+}
 //11.
 
 
