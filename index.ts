@@ -218,10 +218,26 @@ console.log(usuarioPublico)
 
 
 //15.
+interface Configuracion {
+  tema?: string;
+  idioma?: string;
+}
+const configuracionCompleta: Required<Configuracion> = {
+  tema: "oscuro",
+  idioma: "Ingles",
+}
+console.log(configuracionCompleta);
 
+const usuarioFijo: Readonly<Usuario> = {
+id: 342,
+nombre: "Manolo",
+email: "com.me@me.com",
+edad: 23,
+};
 
-
-
+console.log(usuarioFijo);
+//usuarioFijo.nombre = "Carlos";
+//da error por que hemos puesto que solo se pueda leer y no modificar.
 
 //16.
 
