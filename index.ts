@@ -194,7 +194,16 @@ nombre: string;
 email: string;
 edad: number;
 }
+const cambios: Partial<Usuario> ={
+  email: "come@me.com"
+};
+console.log(cambios);
 
+const resumen: Pick<Usuario, "id" | "nombre"> = {
+  id: 467,
+  nombre: "Maqueta",
+};
+console.log(resumen);
 
 
 //14.
