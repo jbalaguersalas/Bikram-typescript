@@ -70,8 +70,11 @@ const ordenador: Producto = {
 }
 //7.
 
-
-
+function mostrarProducto(producto: Producto): string {
+  return `${producto.nombre} cuesta ${producto.precio}€`;
+}
+console.log(mostrarProducto(agua));
+console.log(mostrarProducto(ordenador));
 
 
 //8.
