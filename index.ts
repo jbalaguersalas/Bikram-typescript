@@ -145,14 +145,26 @@ for (let i = 0; i< libros.length; i++){
 //11.
 function buscarUsuario(id: number): string | undefined {
   if (id === 1){
-    return ("Ana")
+    return "Ana"
   }else {
-    return ("undefined")
+    return undefined
   }
 }
 const usuario = buscarUsuario(1);
+if (usuario){
+  console.log(usuario.toUpperCase());
+}else {
+  console.log("no existe")
+}
 
-
+//Prueba con otro usuario
+/*const usuario5 =buscarUsuario(5);
+if (usuario){
+  console.log(usuario.toUpperCase());
+}else {
+  console.log("no existe")
+}
+*/
 
 //12.
 
