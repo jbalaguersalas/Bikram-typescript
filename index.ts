@@ -78,10 +78,18 @@ console.log(mostrarProducto(ordenador));
 
 
 //8.
+type EstadoTarea = "pendiente" | "en-proceso" | "completada";
+let estado: EstadoTarea = "pendiente";
+console.log(estado);
 
+estado = "en-proceso";
+console.log(estado);
 
+estado = "completada";
+console.log(estado);
 
-
+//estado = "cancelada"
+// dice que cancelada no es uno de los valores...
 
 //9.
 
