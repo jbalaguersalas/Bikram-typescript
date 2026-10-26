@@ -92,8 +92,20 @@ console.log(estado);
 // dice que cancelada no es uno de los valores...
 
 //9.
+interface Persona { 
+  nombre :string, 
+  edad: number, 
+  ciudad?:string
+}
 
-
+const Miguel: Persona = {
+  nombre: "Miquel",
+  edad: 24,
+  ciudad: "Valencia",
+};
+const maria: Persona = {
+  
+}
 
 
 
