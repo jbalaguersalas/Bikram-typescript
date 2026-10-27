@@ -241,6 +241,16 @@ console.log(usuarioFijo);
 
 //16.
 
+class CuentaBancaria {
+  private saldo: number;
+
+  constructor(saldoinicial: number) {
+      this.saldo = saldoinicial;
+    }
+
+    
+    }
+  
 
 
 
