@@ -314,3 +314,25 @@ console.log(primero(["macarena", "madio"]));
 console.log(primero([]));
 //20.
 
+type Puntuaciones = Record<string, number>;
+
+const puntuaciones: Puntuaciones = {
+  Carlitos: 9,
+  Maric: 10,
+  Pomelo: 5,
+}
+
+async function obtenerMensaje():Promise<string> {
+  let mejorAlumno: string ="";
+  let mejorNota: number = -1;
+  const nombres = Object.keys(puntuaciones);
+
+  for (let i = 0; i < nombres.length; i++){
+    if (puntuaciones[nombres[i]]>mejorNota){
+      mejorNota = puntuaciones[nombres[i]];
+      mejorAlumno = nombres[i];
+    }
+  }
+  return "El alumno con nota mas alta es =" + mejorAlumno
+}
+obtenerMensaje().then((mensaje) => console.log(mensaje));
