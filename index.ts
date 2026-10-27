@@ -302,8 +302,15 @@ console.log(proceso(EstadoPedido.Enviado));
 console.log(proceso(EstadoPedido.Entregado));
 
 //19.
-  
+  function primero<T>(elementos: T[]): T | undefined {
+    if (elementos.length === 0){
+      return undefined;
+    }
+      return elementos[0];
+  }
 
-
+console.log(primero([5, 6, 7, 23]));
+console.log(primero(["macarena", "madio"]));
+console.log(primero([]));
 //20.
 
