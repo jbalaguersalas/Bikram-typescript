@@ -276,11 +276,21 @@ class Video implements Reproducible {
   reproducir(): void {
     console.log("Reproduciendo Video")
   }
-  
+
 }
-
+const reproducibles: Reproducible[] = [new Cancion(), new Video()];
+ for (let i =0; i< reproducibles.length; i++) {
+  reproducibles[i].reproducir();
+ }
 //18.
-
+enum EstadoPedido {
+  Pendiente,
+  Enviado,
+  Entregado,
+}
+function proceso(estado: EstadoPedido): string {
+  if (estado === EstadoPedido.Pendiente)
+}
 
 
 //19.
