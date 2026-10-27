@@ -262,12 +262,21 @@ cuenta.ingresar(-20);
 console.log(cuenta.obtenerSaldo());
 
 //17.
+
 interface Reproducible {
   reproducir(): void
 }
 class Cancion implements Reproducible {
   reproducir(): void {
+    console.log("Reproduciendo Hardcore")
   }
+ 
+}
+class Video implements Reproducible {
+  reproducir(): void {
+    console.log("Reproduciendo Video")
+  }
+  
 }
 
 //18.
