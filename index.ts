@@ -289,12 +289,20 @@ enum EstadoPedido {
   Entregado,
 }
 function proceso(estado: EstadoPedido): string {
-  if (estado === EstadoPedido.Pendiente)
+  if (estado === EstadoPedido.Pendiente){
+    return "Tu pedido está pendiente"
+  } else if (estado ===EstadoPedido.Enviado){
+    return "Tu pedido está enviado"
+  }else {
+    return "Tu pedido ha sido entregado";
+  }
 }
-
+console.log(proceso(EstadoPedido.Pendiente));
+console.log(proceso(EstadoPedido.Enviado));
+console.log(proceso(EstadoPedido.Entregado));
 
 //19.
-
+  
 
 
 //20.
