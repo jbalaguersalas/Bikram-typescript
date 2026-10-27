@@ -333,6 +333,6 @@ async function obtenerMensaje():Promise<string> {
       mejorAlumno = nombres[i];
     }
   }
-  return "El alumno con nota mas alta es =" + mejorAlumno
+  return "El alumno con nota mas alta es " + mejorAlumno
 }
 obtenerMensaje().then((mensaje) => console.log(mensaje));
