@@ -19,7 +19,7 @@ Mis 20 ejercicios de TypeScript del bootcamp Full Stack de The Bridge. Empiezan 
 - **17.** La interfaz `Reproducible`, que implementan dos clases: `Cancion` y `Video`.
 - **18.** Un `enum EstadoPedido` con tres estados y una función que devuelve un mensaje para cada uno.
 - **19.** La función genérica `primero<T>()`, que devuelve el primer elemento de un array de cualquier tipo, o `undefined` si está vacío.
-- **20.** Un `Record<string, number>` con notas de alumnos y una función `async` que devuelve quién tiene la nota más alta. Este fue el que más me costó.
+- **20.** Un `Record<string, number>` con notas de alumnos y una función `async` que devuelve quién tiene la nota más alta.
 
 ## Cómo ejecutarlo
 
@@ -37,9 +37,3 @@ node index.js
 ```
 
 Los resultados salen por consola.
-
-## Qué he aprendido
-
-- TypeScript me marca los errores antes de ejecutar nada. Si escribo `estado = "cancelada"` en el ejercicio 8, el editor lo subraya en rojo porque ese valor no está en el tipo.
-- Con un tipo unión como `string | number` tengo que comprobar con `typeof` qué me ha llegado antes de usar `toUpperCase()` o `toFixed()`.
-- Los tipos de utilidad me ahorran escribir tipos nuevos. Con `Omit<Usuario, "email">` saco una versión pública del usuario sin el email, y con `Readonly` TypeScript no me deja cambiar `usuarioFijo.nombre`.
